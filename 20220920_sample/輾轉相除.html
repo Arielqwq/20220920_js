@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const a = 1234567890, b = 246890
+    const gcd = (a, b) => {
+      if (a % b === 0) return b
+      else return gcd(b, a % b)
+    }
+    console.time()
+    console.log(gcd(a, b))
+    console.timeEnd()
+    
+    let gcdnum = 1
+    console.time()
+    for (let i = 1; i <= a; i++) {
+      if (a % i === 0 && b % i === 0) gcdnum = i
+    }
+    console.log(gcdnum)
+    console.timeEnd()
+  </script>
+</body>
+</html>

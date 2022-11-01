@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // const Ming = {
+    //   firstName: "小明",
+    //   lastName: "王",
+    //   sayHello () {
+    //     console.log("你好，我的名字叫 " + this.lastName + this.firstName)
+    //   }
+    // }
+
+    // const Tsai = {
+    //   firstName: "老師",
+    //   lastName: "蔡",
+    //   sayHello () {
+    //     console.log("你好，我的名字叫 " + this.lastName + this.firstName)
+    //   }
+    // }
+
+    // const Zheng = {
+    //   firstName: "老師",
+    //   lastName: "鄭",
+    //   sayHello () {
+    //     console.log("你好，我的名字叫 " + this.lastName + this.firstName)
+    //   }
+    // }
+
+    class Person {
+      constructor (firstName, lastName) {
+        this.firstName = firstName
+        this.lastName = lastName
+      }
+      sayHello () {
+        console.log("你好，我的名字叫 " + this.lastName + this.firstName)
+      }
+    }
+    const Ming = new Person("小明", "王")
+    Ming.sayHello()
+    const Tsai = new Person("老師", "蔡")
+    Tsai.sayHello()
+    const Zheng = new Person("老師", "鄭")
+    Zheng.sayHello()
+    console.log(Zheng.firstName)
+  </script>
+</body>
+</html>

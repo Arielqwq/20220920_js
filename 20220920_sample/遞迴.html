@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // n = 5
+    // 1 + 2 + 3 + 4 + 5 = sum(5)
+    // 5 + (1 + 2 + 3 + 4) = 5 + sum(4)
+    // 5 + 4 + (1 + 2 + 3) = 5 + (4 + sum(3))
+    // 5 + 4 + 3 + (1 + 2) = 5 + (4 + (3 + sum(2)))
+    // 5 + 4 + 3 + 2 + (1) = 5 + (4 + (3 + (2 + sum(1))))
+    const sum = (n) => {
+      if (n === 1) return 1
+      else return n + sum(n - 1)
+    }
+    document.write(sum(5))
+
+    document.write('<hr>')
+
+    const factorial = (n) => {
+      console.log(n)
+      if (n === 0) return 1
+      else return n * factorial(n - 1)
+    }
+    document.write(factorial(5))
+
+    document.write('<hr>')
+    
+    const fibonacci = (n) => {
+      if (n < 2) {
+        return n;
+      }
+      return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+    document.write(fibonacci(10))
+
+    document.write('<hr>')
+
+    const gcd = (a, b) => {
+      if (a % b === 0) return b
+      else return gcd(b, a % b)
+    }
+    document.write(gcd(2002, 847))
+  </script>
+</body>
+</html>

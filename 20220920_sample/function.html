@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // function GoodMorning () {
+    //   document.write('<p>早安，現在我有冰淇淋</p>')
+    // }
+    // const GoodMorning = function () {
+    //   document.write('<p>早安，現在我有冰淇淋</p>')
+    // }
+    // GoodMorning()
+
+    // function GoodMorning (time, item) {
+    //   console.log(arguments)
+    //   document.write(`<p>${time}，現在我有${item}</p>`)
+    // }
+    // GoodMorning('早安', '冰淇淋')
+    // GoodMorning('晚安', '速度與激情9')
+
+    // function GoodMorning (time = '早安', item = '冰淇淋') {
+    //   console.log(arguments)
+    //   document.write(`<p>${time}，現在我有${item}</p>`)
+    // }
+    // GoodMorning('早安')
+    // GoodMorning('晚安', undefined)
+    // GoodMorning(undefined, '速度與激情9')
+
+    // function GoodMorning (time = '早安', item = '冰淇淋') {
+    //   return `${time}，現在我有${item}`
+    // }
+    // document.write(`<p>${GoodMorning()}</p>`)
+    // console.log(GoodMorning())
+    // alert(GoodMorning())
+
+    // const GoodMorning = (time = '早安', item = '冰淇淋') => {
+    //   // Uncaught ReferenceError: arguments is not defined
+    //   // console.log(arguments)
+    //   return `${time}，現在我有${item}`
+    // }
+    // document.write(`<p>${GoodMorning()}</p>`)
+    // console.log(GoodMorning())
+    // alert(GoodMorning())
+
+    var a = 1
+    function func () {
+      var a = 2
+      console.log('in', a) // 2
+    }
+    func()
+    console.log('out', a) // 1
+  </script>
+</body>
+</html>
